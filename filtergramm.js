@@ -211,7 +211,11 @@ function imgSave() {
 	
 	var canvas = document.getElementById("imgcnv");
     var img    = canvas.toDataURL("image/png");	
-    document.write('<img src="'+img+'"/>');
+    //document.write('<img src="'+img+'"/>');
+	var ajax = new XMLHttpRequest();
+	ajax.open("POST",'save.php',false);
+	ajax.setRequestHeader('Content-Type', 'application/upload');
+	ajax.send(img);
 
 }
 
