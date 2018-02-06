@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>File Upload Test</title>
+	<meta name="description" content="Image Filering App">
+	<meta name="author" content="SitePoint">
+	<link rel="stylesheet" type="text/css" href="filtergramm.css">
+	<script type="text/javascript" src="filtergramm.js"></script>
+	<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+
+
+</head>
+
+<body>
+	<h1>Image Filering App - Filtergramm</h1>
+
+	<h2>Your Image</h2>
+	<canvas id="imgcnv">
+    </canvas>
+
+	<div class="imginputdiv">
+		<label for="imginput">Upload Your Image</label>
+		<input type="file" id="imginput" accept="image/*" multiple="false" onchange="imgupload();" />
+	</div>
+
+	<input type="button" id="filter1" value="Make Grey" onclick="makeGrey()" />
+	<input type="button" id="filter2" value="Make Red" onclick="makeRed()" />
+	<input type="button" id="filter3" value="Make Rainbow" onclick="makeRainbow()" />
+	<input type="button" id="filter4" value="Make Cross" onclick="makeCross()" />
+	<input type="button" id="filter5" value="Make Sine" onclick="makeSine()" />
+	<input type="button" id="filter6" value="Make Blur" onclick="makeBlur()" />
+
+	<div class="resetdiv">
+		<input type="button" id="imgreset" value="Reset Image" onclick="imgReset();">
+		<input type="button" id="imgsave" value="Download Image" onclick="imgSave();">
+		<input type="button" id="imgsave" value="Get Near Pixel" onclick="getNearPixel();">
+	</div>
+
+
+</body>
+
+</html>

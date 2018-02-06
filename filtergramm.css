@@ -1,0 +1,19 @@
+canvas 
+{
+	width: 500px;
+    height: 400px;
+    margin: 10px;
+    background-color: white;
+    border: 5px solid lightgray;
+}
+
+input[type="button"]
+{
+    margin: 10px;
+}
+
+.imginputdiv 
+{
+	margin: 10px;
+}
+
